@@ -1,0 +1,1275 @@
+EESchema Schematic File Version 4
+LIBS:learning_shield-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date "lun. 30 mars 2015"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Label 8950 1450 1    60   ~ 0
+Vin
+Text Label 9350 1450 1    60   ~ 0
+IOREF
+Text Label 8900 2500 0    60   ~ 0
+A0
+Text Label 8900 2600 0    60   ~ 0
+A1
+Text Label 8900 2700 0    60   ~ 0
+A2
+Text Label 8900 2800 0    60   ~ 0
+A3
+Text Label 8900 2900 0    60   ~ 0
+A4(SDA)
+Text Label 8900 3000 0    60   ~ 0
+A5(SCL)
+Text Label 10550 3000 0    60   ~ 0
+0(Rx)
+Text Label 10550 2800 0    60   ~ 0
+2
+Text Label 10550 2900 0    60   ~ 0
+1(Tx)
+Text Label 10550 2700 0    60   ~ 0
+3(**)
+Text Label 10550 2600 0    60   ~ 0
+4
+Text Label 10550 2500 0    60   ~ 0
+5(**)
+Text Label 10550 2400 0    60   ~ 0
+6(**)
+Text Label 10550 2300 0    60   ~ 0
+7
+Text Label 10550 2100 0    60   ~ 0
+8
+Text Label 10550 2000 0    60   ~ 0
+9(**)
+Text Label 10550 1900 0    60   ~ 0
+10(**/SS)
+Text Label 10550 1800 0    60   ~ 0
+11(**/MOSI)
+Text Label 10550 1700 0    60   ~ 0
+12(MISO)
+Text Label 10550 1600 0    60   ~ 0
+13(SCK)
+Text Label 10550 1400 0    60   ~ 0
+AREF
+NoConn ~ 9400 1600
+Text Label 10550 1300 0    60   ~ 0
+A4(SDA)P3
+Text Label 10550 1200 0    60   ~ 0
+A5(SCL)P3
+Text Notes 10850 1000 0    60   ~ 0
+Holes
+Text Notes 8550 750  0    60   ~ 0
+Shield for Arduino that uses\nthe same pin disposition\nlike "Uno" board Rev 3.
+$Comp
+L Connector_Generic:Conn_01x08 P1
+U 1 1 56D70129
+P 9600 1900
+F 0 "P1" H 9600 2350 50  0000 C CNN
+F 1 "Power" V 9700 1900 50  0000 C CNN
+F 2 "Socket_Arduino_Uno:Socket_Strip_Arduino_1x08" V 9750 1900 20  0000 C CNN
+F 3 "" H 9600 1900 50  0000 C CNN
+	1    9600 1900
+	1    0    0    -1  
+$EndComp
+Text Label 8650 1800 0    60   ~ 0
+Reset
+$Comp
+L power:+3.3V #PWR01
+U 1 1 56D70538
+P 9150 1450
+F 0 "#PWR01" H 9150 1300 50  0001 C CNN
+F 1 "+3.3V" V 9150 1700 50  0000 C CNN
+F 2 "" H 9150 1450 50  0000 C CNN
+F 3 "" H 9150 1450 50  0000 C CNN
+	1    9150 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR02
+U 1 1 56D707BB
+P 9050 1350
+F 0 "#PWR02" H 9050 1200 50  0001 C CNN
+F 1 "+5V" V 9050 1550 50  0000 C CNN
+F 2 "" H 9050 1350 50  0000 C CNN
+F 3 "" H 9050 1350 50  0000 C CNN
+	1    9050 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 56D70CC2
+P 9300 3150
+F 0 "#PWR03" H 9300 2900 50  0001 C CNN
+F 1 "GND" H 9300 3000 50  0000 C CNN
+F 2 "" H 9300 3150 50  0000 C CNN
+F 3 "" H 9300 3150 50  0000 C CNN
+	1    9300 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 56D70CFF
+P 10300 3150
+F 0 "#PWR04" H 10300 2900 50  0001 C CNN
+F 1 "GND" H 10300 3000 50  0000 C CNN
+F 2 "" H 10300 3150 50  0000 C CNN
+F 3 "" H 10300 3150 50  0000 C CNN
+	1    10300 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x06 P2
+U 1 1 56D70DD8
+P 9600 2700
+F 0 "P2" H 9600 2300 50  0000 C CNN
+F 1 "Analog" V 9700 2700 50  0000 C CNN
+F 2 "Socket_Arduino_Uno:Socket_Strip_Arduino_1x06" V 9750 2750 20  0000 C CNN
+F 3 "" H 9600 2700 50  0000 C CNN
+	1    9600 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 P5
+U 1 1 56D71177
+P 10800 650
+F 0 "P5" V 10900 650 50  0000 C CNN
+F 1 "CONN_01X01" V 10900 650 50  0001 C CNN
+F 2 "Socket_Arduino_Uno:Arduino_1pin" H 10721 724 20  0000 C CNN
+F 3 "" H 10800 650 50  0000 C CNN
+	1    10800 650 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 P6
+U 1 1 56D71274
+P 10900 650
+F 0 "P6" V 11000 650 50  0000 C CNN
+F 1 "CONN_01X01" V 11000 650 50  0001 C CNN
+F 2 "Socket_Arduino_Uno:Arduino_1pin" H 10900 650 20  0001 C CNN
+F 3 "" H 10900 650 50  0000 C CNN
+	1    10900 650 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 P7
+U 1 1 56D712A8
+P 11000 650
+F 0 "P7" V 11100 650 50  0000 C CNN
+F 1 "CONN_01X01" V 11100 650 50  0001 C CNN
+F 2 "Socket_Arduino_Uno:Arduino_1pin" V 11000 650 20  0001 C CNN
+F 3 "" H 11000 650 50  0000 C CNN
+	1    11000 650 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x01 P8
+U 1 1 56D712DB
+P 11100 650
+F 0 "P8" V 11200 650 50  0000 C CNN
+F 1 "CONN_01X01" V 11200 650 50  0001 C CNN
+F 2 "Socket_Arduino_Uno:Arduino_1pin" H 11024 572 20  0000 C CNN
+F 3 "" H 11100 650 50  0000 C CNN
+	1    11100 650 
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 10800 850 
+NoConn ~ 10900 850 
+NoConn ~ 11000 850 
+NoConn ~ 11100 850 
+$Comp
+L Connector_Generic:Conn_01x08 P4
+U 1 1 56D7164F
+P 10000 2600
+F 0 "P4" H 10000 2100 50  0000 C CNN
+F 1 "Digital" V 10100 2600 50  0000 C CNN
+F 2 "Socket_Arduino_Uno:Socket_Strip_Arduino_1x08" V 10150 2550 20  0000 C CNN
+F 3 "" H 10000 2600 50  0000 C CNN
+	1    10000 2600
+	-1   0    0    -1  
+$EndComp
+Wire Notes Line
+	8525 825  9925 825 
+Wire Notes Line
+	9925 825  9925 475 
+Wire Wire Line
+	9350 1450 9350 1700
+Wire Wire Line
+	9350 1700 9400 1700
+Wire Wire Line
+	9400 1900 9150 1900
+Wire Wire Line
+	9400 2000 9050 2000
+Wire Wire Line
+	9400 2300 8950 2300
+Wire Wire Line
+	9400 2100 9300 2100
+Wire Wire Line
+	9400 2200 9300 2200
+Connection ~ 9300 2200
+Wire Wire Line
+	8950 2300 8950 1450
+Wire Wire Line
+	9050 2000 9050 1350
+Wire Wire Line
+	9150 1900 9150 1450
+Wire Wire Line
+	9400 2500 8900 2500
+Wire Wire Line
+	9400 2600 8900 2600
+Wire Wire Line
+	9400 2700 8900 2700
+Wire Wire Line
+	9400 2800 8900 2800
+Wire Wire Line
+	9400 2900 8900 2900
+Wire Wire Line
+	9400 3000 8900 3000
+$Comp
+L Connector_Generic:Conn_01x10 P3
+U 1 1 56D721E0
+P 10000 1600
+F 0 "P3" H 10000 2150 50  0000 C CNN
+F 1 "Digital" V 10100 1600 50  0000 C CNN
+F 2 "Socket_Arduino_Uno:Socket_Strip_Arduino_1x10" V 10150 1600 20  0000 C CNN
+F 3 "" H 10000 1600 50  0000 C CNN
+	1    10000 1600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	10200 2100 10550 2100
+Wire Wire Line
+	10200 2000 10550 2000
+Wire Wire Line
+	10200 1900 10550 1900
+Wire Wire Line
+	10200 1800 10550 1800
+Wire Wire Line
+	10200 1700 10550 1700
+Wire Wire Line
+	10200 1600 10550 1600
+Wire Wire Line
+	10200 1400 10550 1400
+Wire Wire Line
+	10200 1300 10550 1300
+Wire Wire Line
+	10200 1200 10550 1200
+Wire Wire Line
+	10200 3000 10550 3000
+Wire Wire Line
+	10200 2900 10550 2900
+Wire Wire Line
+	10200 2800 10550 2800
+Wire Wire Line
+	10200 2700 10550 2700
+Wire Wire Line
+	10200 2600 10550 2600
+Wire Wire Line
+	10200 2500 10550 2500
+Wire Wire Line
+	10200 2400 10550 2400
+Wire Wire Line
+	10200 2300 10550 2300
+Wire Wire Line
+	10200 1500 10300 1500
+Wire Wire Line
+	10300 1500 10300 3150
+Wire Wire Line
+	9300 2100 9300 2200
+Wire Wire Line
+	9300 2200 9300 3150
+Wire Notes Line
+	8500 500  8500 3450
+Wire Notes Line
+	8500 3450 11200 3450
+Wire Wire Line
+	9400 1800 8650 1800
+Text Notes 9700 1600 0    60   ~ 0
+1
+Wire Notes Line
+	11200 1000 10700 1000
+Wire Notes Line
+	10700 1000 10700 500 
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5E13285A
+P 1550 1675
+F 0 "SW1" H 1550 1625 50  0000 C CNN
+F 1 "Switch A" H 1550 1850 50  0000 C CNN
+F 2 "lib_fp:ebay_button" H 1550 1875 50  0001 C CNN
+F 3 "~" H 1550 1875 50  0001 C CNN
+	1    1550 1675
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED_ALT D1
+U 1 1 5E134B89
+P 6775 1400
+F 0 "D1" H 6775 1300 50  0000 C CNN
+F 1 "LED A" H 6775 1500 50  0000 C CNN
+F 2 "LEDs:LED_0805_HandSoldering" H 6775 1400 50  0001 C CNN
+F 3 "~" H 6775 1400 50  0001 C CNN
+	1    6775 1400
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R11
+U 1 1 5E135BA0
+P 6475 1400
+F 0 "R11" V 6375 1400 50  0000 C CNN
+F 1 "510" V 6475 1400 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 6405 1400 50  0001 C CNN
+F 3 "~" H 6475 1400 50  0001 C CNN
+F 4 "1-0000205" H 6475 1400 50  0001 C CNN "Internal Part Number"
+F 5 "1" H 6475 1400 50  0001 C CNN "Populated"
+	1    6475 1400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5E136259
+P 1550 1175
+F 0 "R1" V 1475 1175 50  0000 C CNN
+F 1 "10k" V 1550 1175 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 1480 1175 50  0001 C CNN
+F 3 "~" H 1550 1175 50  0001 C CNN
+F 4 "1-0000010" H 1550 1175 50  0001 C CNN "Internal Part Number"
+F 5 "1" H 1550 1175 50  0001 C CNN "Populated"
+	1    1550 1175
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5E137A14
+P 1750 1400
+F 0 "R3" V 1675 1400 50  0000 C CNN
+F 1 "10k" V 1750 1400 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 1680 1400 50  0001 C CNN
+F 3 "~" H 1750 1400 50  0001 C CNN
+F 4 "1-0000010" H 1750 1400 50  0001 C CNN "Internal Part Number"
+F 5 "1" H 1750 1400 50  0001 C CNN "Populated"
+	1    1750 1400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 5E139906
+P 1950 1625
+F 0 "C1" H 2065 1671 50  0000 L CNN
+F 1 "C" H 2065 1580 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 1988 1475 50  0001 C CNN
+F 3 "~" H 1950 1625 50  0001 C CNN
+	1    1950 1625
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC14 U1
+U 1 1 5E13AC6B
+P 2425 1400
+F 0 "U1" H 2425 1717 50  0000 C CNN
+F 1 "74HC14" H 2425 1626 50  0000 C CNN
+F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 2425 1400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 2425 1400 50  0001 C CNN
+	1    2425 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT RV1
+U 1 1 5E13D91F
+P 1600 4625
+F 0 "RV1" V 1485 4625 50  0000 C CNN
+F 1 "R_POT" V 1394 4625 50  0000 C CNN
+F 2 "lib_fp:ebay_potentiometer" H 1600 4625 50  0001 C CNN
+F 3 "~" H 1600 4625 50  0001 C CNN
+	1    1600 4625
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J1
+U 1 1 5E13E728
+P 3675 6675
+F 0 "J1" H 3755 6667 50  0000 L CNN
+F 1 "Ping Sensor" H 3755 6576 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 3675 6675 50  0001 C CNN
+F 3 "~" H 3675 6675 50  0001 C CNN
+	1    3675 6675
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J2
+U 1 1 5E13EC07
+P 5025 6775
+F 0 "J2" H 5105 6817 50  0000 L CNN
+F 1 "Servo" H 5105 6726 50  0000 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 5025 6775 50  0001 C CNN
+F 3 "~" H 5025 6775 50  0001 C CNN
+	1    5025 6775
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_PHOTO R9
+U 1 1 5E13F999
+P 5375 4250
+F 0 "R9" V 5450 4250 50  0000 C CNN
+F 1 "R_PHOTO" V 5141 4250 50  0001 C CNN
+F 2 "lib_fp:photoresistor" V 5425 4000 50  0001 L CNN
+F 3 "~" H 5375 4200 50  0001 C CNN
+	1    5375 4250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R10
+U 1 1 5E1400DE
+P 5375 4700
+F 0 "R10" V 5300 4700 50  0000 C CNN
+F 1 "10k" V 5375 4700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 5305 4700 50  0001 C CNN
+F 3 "~" H 5375 4700 50  0001 C CNN
+F 4 "1-0000010" H 5375 4700 50  0001 C CNN "Internal Part Number"
+F 5 "1" H 5375 4700 50  0001 C CNN "Populated"
+	1    5375 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR026
+U 1 1 5E142176
+P 5375 4850
+F 0 "#PWR026" H 5375 4600 50  0001 C CNN
+F 1 "GND" H 5375 4700 50  0000 C CNN
+F 2 "" H 5375 4850 50  0000 C CNN
+F 3 "" H 5375 4850 50  0000 C CNN
+	1    5375 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR025
+U 1 1 5E1426EE
+P 5375 4100
+F 0 "#PWR025" H 5375 3950 50  0001 C CNN
+F 1 "+5V" V 5375 4300 50  0000 C CNN
+F 2 "" H 5375 4100 50  0000 C CNN
+F 3 "" H 5375 4100 50  0000 C CNN
+	1    5375 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5375 4400 5375 4475
+$Comp
+L Device:Buzzer BZ1
+U 1 1 5E14A5A2
+P 7725 4175
+F 0 "BZ1" H 7877 4204 50  0000 L CNN
+F 1 "Buzzer" H 7877 4113 50  0000 L CNN
+F 2 "Buzzers_Beepers:Buzzer_15x7.5RM7.6" V 7700 4275 50  0001 C CNN
+F 3 "~" V 7700 4275 50  0001 C CNN
+F 4 "1" H 7725 4175 50  0001 C CNN "Populated"
+	1    7725 4175
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:MMBT3904 Q1
+U 1 1 5E14AD29
+P 7375 4625
+F 0 "Q1" H 7566 4671 50  0000 L CNN
+F 1 "MMBT3904" H 7566 4580 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 7575 4550 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 7375 4625 50  0001 L CNN
+F 4 "1-0000036" H 7375 4625 50  0001 C CNN "Internal Part Number"
+F 5 "1" H 7375 4625 50  0001 C CNN "Populated"
+	1    7375 4625
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R15
+U 1 1 5E14B02B
+P 7025 4625
+F 0 "R15" V 6950 4625 50  0000 C CNN
+F 1 "1k" V 7025 4625 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 6955 4625 50  0001 C CNN
+F 3 "~" H 7025 4625 50  0001 C CNN
+F 4 "1-0000013" H 7025 4625 50  0001 C CNN "Internal Part Number"
+F 5 "1" H 7025 4625 50  0001 C CNN "Populated"
+	1    7025 4625
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R16
+U 1 1 5E14BBE3
+P 7475 4175
+F 0 "R16" V 7400 4175 50  0000 C CNN
+F 1 "1k" V 7475 4175 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 7405 4175 50  0001 C CNN
+F 3 "~" H 7475 4175 50  0001 C CNN
+F 4 "1-0000013" H 7475 4175 50  0001 C CNN "Internal Part Number"
+F 5 "1" H 7475 4175 50  0001 C CNN "Populated"
+	1    7475 4175
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR032
+U 1 1 5E14D981
+P 7475 4825
+F 0 "#PWR032" H 7475 4575 50  0001 C CNN
+F 1 "GND" H 7475 4675 50  0000 C CNN
+F 2 "" H 7475 4825 50  0000 C CNN
+F 3 "" H 7475 4825 50  0000 C CNN
+	1    7475 4825
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR031
+U 1 1 5E14DF56
+P 7475 3925
+F 0 "#PWR031" H 7475 3775 50  0001 C CNN
+F 1 "+5V" V 7475 4125 50  0000 C CNN
+F 2 "" H 7475 3925 50  0000 C CNN
+F 3 "" H 7475 3925 50  0000 C CNN
+	1    7475 3925
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7625 4075 7625 3975
+Wire Wire Line
+	7625 3975 7475 3975
+Wire Wire Line
+	7475 3975 7475 3925
+Wire Wire Line
+	7475 4025 7475 3975
+Connection ~ 7475 3975
+Wire Wire Line
+	7625 4275 7625 4375
+Wire Wire Line
+	7625 4375 7475 4375
+Wire Wire Line
+	7475 4375 7475 4325
+Wire Wire Line
+	7475 4425 7475 4375
+Connection ~ 7475 4375
+Text Label 6875 4625 2    60   ~ 0
+11(**/MOSI)
+$Comp
+L power:+5V #PWR023
+U 1 1 5E158B15
+P 4825 6775
+F 0 "#PWR023" H 4825 6625 50  0001 C CNN
+F 1 "+5V" V 4825 6975 50  0000 C CNN
+F 2 "" H 4825 6775 50  0000 C CNN
+F 3 "" H 4825 6775 50  0000 C CNN
+	1    4825 6775
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR024
+U 1 1 5E159383
+P 4825 6875
+F 0 "#PWR024" H 4825 6625 50  0001 C CNN
+F 1 "GND" H 4825 6725 50  0000 C CNN
+F 2 "" H 4825 6875 50  0000 C CNN
+F 3 "" H 4825 6875 50  0000 C CNN
+	1    4825 6875
+	1    0    0    -1  
+$EndComp
+Text Label 4825 6675 2    60   ~ 0
+10(**/SS)
+$Comp
+L power:+5V #PWR017
+U 1 1 5E15B506
+P 3475 6575
+F 0 "#PWR017" H 3475 6425 50  0001 C CNN
+F 1 "+5V" V 3475 6775 50  0000 C CNN
+F 2 "" H 3475 6575 50  0000 C CNN
+F 3 "" H 3475 6575 50  0000 C CNN
+	1    3475 6575
+	1    0    0    -1  
+$EndComp
+Text Label 3475 6675 2    60   ~ 0
+12(MISO)
+Text Label 3475 6775 2    60   ~ 0
+13(SCK)
+$Comp
+L power:GND #PWR018
+U 1 1 5E15BD10
+P 3475 6875
+F 0 "#PWR018" H 3475 6625 50  0001 C CNN
+F 1 "GND" H 3475 6725 50  0000 C CNN
+F 2 "" H 3475 6875 50  0000 C CNN
+F 3 "" H 3475 6875 50  0000 C CNN
+	1    3475 6875
+	1    0    0    -1  
+$EndComp
+Text Label 5675 4475 0    60   ~ 0
+A2
+Wire Wire Line
+	5675 4475 5375 4475
+Connection ~ 5375 4475
+Wire Wire Line
+	5375 4475 5375 4550
+$Comp
+L Sensor_Temperature:TMP36xS U2
+U 1 1 5E16234C
+P 3600 4450
+F 0 "U2" H 3900 4800 50  0000 L CNN
+F 1 "TMP36xS" H 3725 4100 50  0000 L CNN
+F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 3600 4000 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/TMP35_36_37.pdf" H 3600 4450 50  0001 C CNN
+	1    3600 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR019
+U 1 1 5E162817
+P 3600 3925
+F 0 "#PWR019" H 3600 3775 50  0001 C CNN
+F 1 "+5V" V 3600 4125 50  0000 C CNN
+F 2 "" H 3600 3925 50  0000 C CNN
+F 3 "" H 3600 3925 50  0000 C CNN
+	1    3600 3925
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR020
+U 1 1 5E163138
+P 3600 4850
+F 0 "#PWR020" H 3600 4600 50  0001 C CNN
+F 1 "GND" H 3600 4700 50  0000 C CNN
+F 2 "" H 3600 4850 50  0000 C CNN
+F 3 "" H 3600 4850 50  0000 C CNN
+	1    3600 4850
+	1    0    0    -1  
+$EndComp
+Text Label 4100 4450 0    60   ~ 0
+A1
+Text Label 1750 4625 0    60   ~ 0
+A0
+$Comp
+L power:+5V #PWR09
+U 1 1 5E166A45
+P 1600 4475
+F 0 "#PWR09" H 1600 4325 50  0001 C CNN
+F 1 "+5V" V 1600 4675 50  0000 C CNN
+F 2 "" H 1600 4475 50  0000 C CNN
+F 3 "" H 1600 4475 50  0000 C CNN
+	1    1600 4475
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR010
+U 1 1 5E166EB2
+P 1600 4775
+F 0 "#PWR010" H 1600 4525 50  0001 C CNN
+F 1 "GND" H 1600 4625 50  0000 C CNN
+F 2 "" H 1600 4775 50  0000 C CNN
+F 3 "" H 1600 4775 50  0000 C CNN
+	1    1600 4775
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR027
+U 1 1 5E167931
+P 7000 1475
+F 0 "#PWR027" H 7000 1225 50  0001 C CNN
+F 1 "GND" H 7000 1325 50  0000 C CNN
+F 2 "" H 7000 1475 50  0000 C CNN
+F 3 "" H 7000 1475 50  0000 C CNN
+	1    7000 1475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6925 1400 7000 1400
+Wire Wire Line
+	7000 1400 7000 1475
+$Comp
+L Device:LED_ALT D2
+U 1 1 5E16CDDD
+P 6775 1800
+F 0 "D2" H 6775 1700 50  0000 C CNN
+F 1 "LED A" H 6775 1900 50  0000 C CNN
+F 2 "LEDs:LED_0805_HandSoldering" H 6775 1800 50  0001 C CNN
+F 3 "~" H 6775 1800 50  0001 C CNN
+	1    6775 1800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R12
+U 1 1 5E16CDE5
+P 6475 1800
+F 0 "R12" V 6375 1800 50  0000 C CNN
+F 1 "510" V 6475 1800 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 6405 1800 50  0001 C CNN
+F 3 "~" H 6475 1800 50  0001 C CNN
+F 4 "1-0000205" H 6475 1800 50  0001 C CNN "Internal Part Number"
+F 5 "1" H 6475 1800 50  0001 C CNN "Populated"
+	1    6475 1800
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR028
+U 1 1 5E16CDEB
+P 7000 1875
+F 0 "#PWR028" H 7000 1625 50  0001 C CNN
+F 1 "GND" H 7000 1725 50  0000 C CNN
+F 2 "" H 7000 1875 50  0000 C CNN
+F 3 "" H 7000 1875 50  0000 C CNN
+	1    7000 1875
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6925 1800 7000 1800
+Wire Wire Line
+	7000 1800 7000 1875
+$Comp
+L Device:LED_ALT D3
+U 1 1 5E171457
+P 6775 2200
+F 0 "D3" H 6775 2100 50  0000 C CNN
+F 1 "LED A" H 6775 2300 50  0000 C CNN
+F 2 "LEDs:LED_0805_HandSoldering" H 6775 2200 50  0001 C CNN
+F 3 "~" H 6775 2200 50  0001 C CNN
+	1    6775 2200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R13
+U 1 1 5E17145F
+P 6475 2200
+F 0 "R13" V 6375 2200 50  0000 C CNN
+F 1 "510" V 6475 2200 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 6405 2200 50  0001 C CNN
+F 3 "~" H 6475 2200 50  0001 C CNN
+F 4 "1-0000205" H 6475 2200 50  0001 C CNN "Internal Part Number"
+F 5 "1" H 6475 2200 50  0001 C CNN "Populated"
+	1    6475 2200
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR029
+U 1 1 5E171465
+P 7000 2275
+F 0 "#PWR029" H 7000 2025 50  0001 C CNN
+F 1 "GND" H 7000 2125 50  0000 C CNN
+F 2 "" H 7000 2275 50  0000 C CNN
+F 3 "" H 7000 2275 50  0000 C CNN
+	1    7000 2275
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6925 2200 7000 2200
+Wire Wire Line
+	7000 2200 7000 2275
+$Comp
+L Device:LED_ALT D4
+U 1 1 5E17146D
+P 6775 2600
+F 0 "D4" H 6775 2500 50  0000 C CNN
+F 1 "LED A" H 6775 2700 50  0000 C CNN
+F 2 "LEDs:LED_0805_HandSoldering" H 6775 2600 50  0001 C CNN
+F 3 "~" H 6775 2600 50  0001 C CNN
+	1    6775 2600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R14
+U 1 1 5E171475
+P 6475 2600
+F 0 "R14" V 6375 2600 50  0000 C CNN
+F 1 "510" V 6475 2600 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 6405 2600 50  0001 C CNN
+F 3 "~" H 6475 2600 50  0001 C CNN
+F 4 "1-0000205" H 6475 2600 50  0001 C CNN "Internal Part Number"
+F 5 "1" H 6475 2600 50  0001 C CNN "Populated"
+	1    6475 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR030
+U 1 1 5E17147B
+P 7000 2675
+F 0 "#PWR030" H 7000 2425 50  0001 C CNN
+F 1 "GND" H 7000 2525 50  0000 C CNN
+F 2 "" H 7000 2675 50  0000 C CNN
+F 3 "" H 7000 2675 50  0000 C CNN
+	1    7000 2675
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6925 2600 7000 2600
+Wire Wire Line
+	7000 2600 7000 2675
+Text Label 6325 1400 2    60   ~ 0
+6(**)
+Text Label 6325 1800 2    60   ~ 0
+7
+Text Label 6325 2200 2    60   ~ 0
+8
+Text Label 6325 2600 2    60   ~ 0
+9(**)
+Wire Wire Line
+	1550 1475 1550 1400
+Wire Wire Line
+	1600 1400 1550 1400
+Connection ~ 1550 1400
+Wire Wire Line
+	1550 1400 1550 1325
+Wire Wire Line
+	1900 1400 1950 1400
+Wire Wire Line
+	1950 1475 1950 1400
+Connection ~ 1950 1400
+Wire Wire Line
+	1950 1400 2125 1400
+$Comp
+L power:+5V #PWR05
+U 1 1 5E17BEAB
+P 1550 1025
+F 0 "#PWR05" H 1550 875 50  0001 C CNN
+F 1 "+5V" V 1550 1225 50  0000 C CNN
+F 2 "" H 1550 1025 50  0000 C CNN
+F 3 "" H 1550 1025 50  0000 C CNN
+	1    1550 1025
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 5E17C87C
+P 1550 1875
+F 0 "#PWR06" H 1550 1625 50  0001 C CNN
+F 1 "GND" H 1550 1725 50  0000 C CNN
+F 2 "" H 1550 1875 50  0000 C CNN
+F 3 "" H 1550 1875 50  0000 C CNN
+	1    1550 1875
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR011
+U 1 1 5E17D06C
+P 1950 1775
+F 0 "#PWR011" H 1950 1525 50  0001 C CNN
+F 1 "GND" H 1950 1625 50  0000 C CNN
+F 2 "" H 1950 1775 50  0000 C CNN
+F 3 "" H 1950 1775 50  0000 C CNN
+	1    1950 1775
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW2
+U 1 1 5E188E42
+P 1550 3050
+F 0 "SW2" H 1550 3000 50  0000 C CNN
+F 1 "Switch B" H 1550 3225 50  0000 C CNN
+F 2 "lib_fp:ebay_button" H 1550 3250 50  0001 C CNN
+F 3 "~" H 1550 3250 50  0001 C CNN
+	1    1550 3050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5E188E4A
+P 1550 2550
+F 0 "R2" V 1475 2550 50  0000 C CNN
+F 1 "10k" V 1550 2550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 1480 2550 50  0001 C CNN
+F 3 "~" H 1550 2550 50  0001 C CNN
+F 4 "1-0000010" H 1550 2550 50  0001 C CNN "Internal Part Number"
+F 5 "1" H 1550 2550 50  0001 C CNN "Populated"
+	1    1550 2550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5E188E52
+P 1750 2775
+F 0 "R4" V 1675 2775 50  0000 C CNN
+F 1 "10k" V 1750 2775 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 1680 2775 50  0001 C CNN
+F 3 "~" H 1750 2775 50  0001 C CNN
+F 4 "1-0000010" H 1750 2775 50  0001 C CNN "Internal Part Number"
+F 5 "1" H 1750 2775 50  0001 C CNN "Populated"
+	1    1750 2775
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5E188E58
+P 1950 3000
+F 0 "C2" H 2065 3046 50  0000 L CNN
+F 1 "C" H 2065 2955 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 1988 2850 50  0001 C CNN
+F 3 "~" H 1950 3000 50  0001 C CNN
+	1    1950 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC14 U1
+U 2 1 5E188E5E
+P 2425 2775
+F 0 "U1" H 2425 3092 50  0000 C CNN
+F 1 "74HC14" H 2425 3001 50  0000 C CNN
+F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 2425 2775 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 2425 2775 50  0001 C CNN
+	2    2425 2775
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 2850 1550 2775
+Wire Wire Line
+	1600 2775 1550 2775
+Connection ~ 1550 2775
+Wire Wire Line
+	1550 2775 1550 2700
+Wire Wire Line
+	1900 2775 1950 2775
+Wire Wire Line
+	1950 2850 1950 2775
+Connection ~ 1950 2775
+Wire Wire Line
+	1950 2775 2125 2775
+$Comp
+L power:+5V #PWR07
+U 1 1 5E188E6C
+P 1550 2400
+F 0 "#PWR07" H 1550 2250 50  0001 C CNN
+F 1 "+5V" V 1550 2600 50  0000 C CNN
+F 2 "" H 1550 2400 50  0000 C CNN
+F 3 "" H 1550 2400 50  0000 C CNN
+	1    1550 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR08
+U 1 1 5E188E72
+P 1550 3250
+F 0 "#PWR08" H 1550 3000 50  0001 C CNN
+F 1 "GND" H 1550 3100 50  0000 C CNN
+F 2 "" H 1550 3250 50  0000 C CNN
+F 3 "" H 1550 3250 50  0000 C CNN
+	1    1550 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR012
+U 1 1 5E188E78
+P 1950 3150
+F 0 "#PWR012" H 1950 2900 50  0001 C CNN
+F 1 "GND" H 1950 3000 50  0000 C CNN
+F 2 "" H 1950 3150 50  0000 C CNN
+F 3 "" H 1950 3150 50  0000 C CNN
+	1    1950 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW3
+U 1 1 5E199481
+P 3450 1675
+F 0 "SW3" H 3450 1625 50  0000 C CNN
+F 1 "Switch C" H 3450 1850 50  0000 C CNN
+F 2 "lib_fp:ebay_button" H 3450 1875 50  0001 C CNN
+F 3 "~" H 3450 1875 50  0001 C CNN
+	1    3450 1675
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 5E199489
+P 3450 1175
+F 0 "R5" V 3375 1175 50  0000 C CNN
+F 1 "10k" V 3450 1175 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 3380 1175 50  0001 C CNN
+F 3 "~" H 3450 1175 50  0001 C CNN
+F 4 "1-0000010" H 3450 1175 50  0001 C CNN "Internal Part Number"
+F 5 "1" H 3450 1175 50  0001 C CNN "Populated"
+	1    3450 1175
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 5E199491
+P 3650 1400
+F 0 "R7" V 3575 1400 50  0000 C CNN
+F 1 "10k" V 3650 1400 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 3580 1400 50  0001 C CNN
+F 3 "~" H 3650 1400 50  0001 C CNN
+F 4 "1-0000010" H 3650 1400 50  0001 C CNN "Internal Part Number"
+F 5 "1" H 3650 1400 50  0001 C CNN "Populated"
+	1    3650 1400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 5E199497
+P 3850 1625
+F 0 "C3" H 3965 1671 50  0000 L CNN
+F 1 "C" H 3965 1580 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 3888 1475 50  0001 C CNN
+F 3 "~" H 3850 1625 50  0001 C CNN
+	1    3850 1625
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC14 U1
+U 3 1 5E19949D
+P 4325 1400
+F 0 "U1" H 4325 1717 50  0000 C CNN
+F 1 "74HC14" H 4325 1626 50  0000 C CNN
+F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 4325 1400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 4325 1400 50  0001 C CNN
+	3    4325 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 1475 3450 1400
+Wire Wire Line
+	3500 1400 3450 1400
+Connection ~ 3450 1400
+Wire Wire Line
+	3450 1400 3450 1325
+Wire Wire Line
+	3800 1400 3850 1400
+Wire Wire Line
+	3850 1475 3850 1400
+Connection ~ 3850 1400
+Wire Wire Line
+	3850 1400 4025 1400
+$Comp
+L power:+5V #PWR013
+U 1 1 5E1994AB
+P 3450 1025
+F 0 "#PWR013" H 3450 875 50  0001 C CNN
+F 1 "+5V" V 3450 1225 50  0000 C CNN
+F 2 "" H 3450 1025 50  0000 C CNN
+F 3 "" H 3450 1025 50  0000 C CNN
+	1    3450 1025
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR014
+U 1 1 5E1994B1
+P 3450 1875
+F 0 "#PWR014" H 3450 1625 50  0001 C CNN
+F 1 "GND" H 3450 1725 50  0000 C CNN
+F 2 "" H 3450 1875 50  0000 C CNN
+F 3 "" H 3450 1875 50  0000 C CNN
+	1    3450 1875
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR021
+U 1 1 5E1994B7
+P 3850 1775
+F 0 "#PWR021" H 3850 1525 50  0001 C CNN
+F 1 "GND" H 3850 1625 50  0000 C CNN
+F 2 "" H 3850 1775 50  0000 C CNN
+F 3 "" H 3850 1775 50  0000 C CNN
+	1    3850 1775
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW4
+U 1 1 5E1994BD
+P 3450 3050
+F 0 "SW4" H 3450 3000 50  0000 C CNN
+F 1 "Switch D" H 3450 3225 50  0000 C CNN
+F 2 "lib_fp:ebay_button" H 3450 3250 50  0001 C CNN
+F 3 "~" H 3450 3250 50  0001 C CNN
+	1    3450 3050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 5E1994C5
+P 3450 2550
+F 0 "R6" V 3375 2550 50  0000 C CNN
+F 1 "10k" V 3450 2550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 3380 2550 50  0001 C CNN
+F 3 "~" H 3450 2550 50  0001 C CNN
+F 4 "1-0000010" H 3450 2550 50  0001 C CNN "Internal Part Number"
+F 5 "1" H 3450 2550 50  0001 C CNN "Populated"
+	1    3450 2550
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 5E1994CD
+P 3650 2775
+F 0 "R8" V 3575 2775 50  0000 C CNN
+F 1 "10k" V 3650 2775 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 3580 2775 50  0001 C CNN
+F 3 "~" H 3650 2775 50  0001 C CNN
+F 4 "1-0000010" H 3650 2775 50  0001 C CNN "Internal Part Number"
+F 5 "1" H 3650 2775 50  0001 C CNN "Populated"
+	1    3650 2775
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 5E1994D3
+P 3850 3000
+F 0 "C4" H 3965 3046 50  0000 L CNN
+F 1 "C" H 3965 2955 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 3888 2850 50  0001 C CNN
+F 3 "~" H 3850 3000 50  0001 C CNN
+	1    3850 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC14 U1
+U 4 1 5E1994D9
+P 4325 2775
+F 0 "U1" H 4325 3092 50  0000 C CNN
+F 1 "74HC14" H 4325 3001 50  0000 C CNN
+F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 4325 2775 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 4325 2775 50  0001 C CNN
+	4    4325 2775
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 2850 3450 2775
+Wire Wire Line
+	3500 2775 3450 2775
+Connection ~ 3450 2775
+Wire Wire Line
+	3450 2775 3450 2700
+Wire Wire Line
+	3800 2775 3850 2775
+Wire Wire Line
+	3850 2850 3850 2775
+Connection ~ 3850 2775
+Wire Wire Line
+	3850 2775 4025 2775
+$Comp
+L power:+5V #PWR015
+U 1 1 5E1994E7
+P 3450 2400
+F 0 "#PWR015" H 3450 2250 50  0001 C CNN
+F 1 "+5V" V 3450 2600 50  0000 C CNN
+F 2 "" H 3450 2400 50  0000 C CNN
+F 3 "" H 3450 2400 50  0000 C CNN
+	1    3450 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR016
+U 1 1 5E1994ED
+P 3450 3250
+F 0 "#PWR016" H 3450 3000 50  0001 C CNN
+F 1 "GND" H 3450 3100 50  0000 C CNN
+F 2 "" H 3450 3250 50  0000 C CNN
+F 3 "" H 3450 3250 50  0000 C CNN
+	1    3450 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR022
+U 1 1 5E1994F3
+P 3850 3150
+F 0 "#PWR022" H 3850 2900 50  0001 C CNN
+F 1 "GND" H 3850 3000 50  0000 C CNN
+F 2 "" H 3850 3150 50  0000 C CNN
+F 3 "" H 3850 3150 50  0000 C CNN
+	1    3850 3150
+	1    0    0    -1  
+$EndComp
+Text Label 2725 1400 0    60   ~ 0
+2
+Text Label 2725 2775 0    60   ~ 0
+3(**)
+Text Label 4625 1400 0    60   ~ 0
+4
+Text Label 4625 2775 0    60   ~ 0
+5(**)
+$Comp
+L 74xx:74HC14 U1
+U 7 1 5E19E4AF
+P 9750 5775
+F 0 "U1" H 9875 6125 50  0000 C CNN
+F 1 "74HC14" H 9750 5800 50  0000 C CNN
+F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 9750 5775 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 9750 5775 50  0001 C CNN
+	7    9750 5775
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR033
+U 1 1 5E19F4AE
+P 9750 5275
+F 0 "#PWR033" H 9750 5125 50  0001 C CNN
+F 1 "+5V" V 9750 5475 50  0000 C CNN
+F 2 "" H 9750 5275 50  0000 C CNN
+F 3 "" H 9750 5275 50  0000 C CNN
+	1    9750 5275
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR034
+U 1 1 5E19FD44
+P 9750 6275
+F 0 "#PWR034" H 9750 6025 50  0001 C CNN
+F 1 "GND" H 9750 6125 50  0000 C CNN
+F 2 "" H 9750 6275 50  0000 C CNN
+F 3 "" H 9750 6275 50  0000 C CNN
+	1    9750 6275
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC14 U1
+U 5 1 5E1A00A0
+P 10550 5550
+F 0 "U1" H 10550 5867 50  0000 C CNN
+F 1 "74HC14" H 10550 5776 50  0000 C CNN
+F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 10550 5550 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 10550 5550 50  0001 C CNN
+	5    10550 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74HC14 U1
+U 6 1 5E1A153D
+P 10550 6075
+F 0 "U1" H 10550 6392 50  0000 C CNN
+F 1 "74HC14" H 10550 6301 50  0000 C CNN
+F 2 "Housings_SOIC:SOIC-14_3.9x8.7mm_Pitch1.27mm" H 10550 6075 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 10550 6075 50  0001 C CNN
+	6    10550 6075
+	1    0    0    -1  
+$EndComp
+NoConn ~ 10850 5550
+NoConn ~ 10850 6075
+$Comp
+L power:GND #PWR035
+U 1 1 5E1A7DFE
+P 10250 5550
+F 0 "#PWR035" H 10250 5300 50  0001 C CNN
+F 1 "GND" H 10250 5400 50  0000 C CNN
+F 2 "" H 10250 5550 50  0000 C CNN
+F 3 "" H 10250 5550 50  0000 C CNN
+	1    10250 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR036
+U 1 1 5E1A82AA
+P 10250 6075
+F 0 "#PWR036" H 10250 5825 50  0001 C CNN
+F 1 "GND" H 10250 5925 50  0000 C CNN
+F 2 "" H 10250 6075 50  0000 C CNN
+F 3 "" H 10250 6075 50  0000 C CNN
+	1    10250 6075
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 4050 3600 4000
+Wire Wire Line
+	3600 4000 3100 4000
+Wire Wire Line
+	3100 4000 3100 4450
+Connection ~ 3600 4000
+Wire Wire Line
+	3600 4000 3600 3925
+$EndSCHEMATC
