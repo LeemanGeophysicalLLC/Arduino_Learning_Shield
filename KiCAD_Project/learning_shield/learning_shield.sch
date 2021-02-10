@@ -3918,4 +3918,17 @@ Text Notes 1950 3125 0    50   ~ 0
 NP
 Text Notes 3850 3125 0    50   ~ 0
 NP
+$Comp
+L lib_fp:barepcb PCB1
+U 1 1 5FDF0564
+P 7175 6350
+F 0 "PCB1" H 7403 6396 50  0000 L CNN
+F 1 "barepcb" H 7025 6375 50  0000 L CNN
+F 2 "" H 7175 6350 50  0001 C CNN
+F 3 "" H 7175 6350 50  0001 C CNN
+F 4 "3-0000025" H 7175 6350 50  0001 C CNN "Internal Part Number"
+F 5 "1" H 7175 6350 50  0001 C CNN "Populated"
+	1    7175 6350
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
